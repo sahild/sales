@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'products#index'
+   get '/buy/:permalink', to: 'transactions#new', as: :show_buy
+    post '/buy/:permalink', to: 'transactions#create', as: :buy
+    get '/pickup/:guid', to: 'transactions#pickup', as: :pickup
+    get '/download/:guid', to: 'transactions#download', as: :download
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
