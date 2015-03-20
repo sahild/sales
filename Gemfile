@@ -33,6 +33,10 @@ gem 'aws-sdk'
 gem 'figaro'
 gem 'stripe', '~> 1.17.0'
 gem 'httparty'
+group :development do
+ gem 'stripe-ruby-mock'
+ gem 'database_cleaner'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
