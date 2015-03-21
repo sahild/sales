@@ -33,6 +33,8 @@ gem 'aws-sdk'
 gem 'figaro'
 gem 'stripe', '~> 1.17.0'
 gem 'httparty'
+gem 'aasm'
+gem 'paper_trail', '~> 3.0.6'
 group :development do
  gem 'stripe-ruby-mock'
  gem 'database_cleaner'
